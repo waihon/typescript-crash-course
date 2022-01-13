@@ -10,6 +10,7 @@ var lastName = 'Kumar';
 // firstName = false;
 console.log(found);
 console.log("The grade is " + grade);
+// String concatenation
 console.log("Hi " + firstName + " " + lastName);
 // Template string
 console.log("Hi ".concat(firstName, " ").concat(lastName));
