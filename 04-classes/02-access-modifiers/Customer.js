@@ -1,9 +1,10 @@
 var Customer = /** @class */ (function () {
-    function Customer(theFirst, theLast) {
-        this._firstName = theFirst;
-        this._lastName = theLast;
+    function Customer(firstName, lastName) {
+        this._firstName = firstName;
+        this._lastName = lastName;
     }
     Object.defineProperty(Customer.prototype, "firstName", {
+        // Accessors (Getters and Setters) are public by default
         get: function () {
             return this._firstName;
         },
@@ -26,5 +27,4 @@ var Customer = /** @class */ (function () {
     return Customer;
 }());
 var myCustomer = new Customer("Martin", "Dixon");
-console.log(myCustomer.firstName);
-console.log(myCustomer.lastName);
+console.log(myCustomer.firstName + ' ' + myCustomer.lastName);
