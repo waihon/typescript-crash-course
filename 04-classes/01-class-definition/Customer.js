@@ -1,10 +1,12 @@
 var Customer = /** @class */ (function () {
-    function Customer(theFirst, theLast) {
-        this.firstName = theFirst;
-        this.lastName = theLast;
+    function Customer(firstName, lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
     }
     return Customer;
 }());
 var myCustomer = new Customer("Martin", "Dixon");
-console.log(myCustomer.firstName);
-console.log(myCustomer.lastName);
+console.log(myCustomer.firstName + ' ' + myCustomer.lastName);
+myCustomer.firstName = "Susan";
+myCustomer.lastName = "Public";
+console.log(myCustomer.firstName + ' ' + myCustomer.lastName);
